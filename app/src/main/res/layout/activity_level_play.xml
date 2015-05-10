@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_compiled"
+    android:id="@+id/gameScreen"
+    tools:context="com.stephenfacentedev.com.monkeydefense.LevelPlay">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/monkey"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/monkey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:paddingBottom="10dp"
+        android:id = "@+id/bananaHolder">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana1"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana2"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana3"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana4"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana5"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana6"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana7"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana8"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana9"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banana10"
+            android:src="@drawable/banana_bright"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textColor="#ffffffff"
+            android:id="@+id/scoreView"
+            android:textAppearance="@style/StrokeText"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:text="0"
+            android:textColor="#ffffffff"
+            android:textAppearance="@style/StrokeText"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/StrokeText"
+        android:text="Large Text"
+        android:id="@+id/levelView"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/StrokeText"
+        android:text="COUNTDOWN"
+        android:id="@+id/countDownText"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp"
+        android:textSize="100dp" />
+</FrameLayout>

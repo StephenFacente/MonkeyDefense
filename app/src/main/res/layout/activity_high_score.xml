@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_compiled"
+    tools:context="com.stephenfacentedev.com.monkeydefense.HighScore">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/StrokeText"
+        android:text="Your Score:"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/StrokeText"
+        android:text="0"
+        android:id="@+id/scoreView"
+        android:textSize="100dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:ems="10"
+        android:id="@+id/scoreName"
+        android:layout_below="@+id/scoreView"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:inputType="textCapCharacters"
+        android:textAppearance="@style/StrokeText"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Highscore"
+        android:id="@+id/submit"
+        android:layout_below="@id/scoreName"
+        android:enabled="false"
+        android:onClick="submitScore"
+        android:background="#c8ccf7f5"
+        android:textAppearance="@style/StrokeText"
+        android:textSize="30dp" />
+</RelativeLayout>
