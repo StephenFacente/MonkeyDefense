@@ -1,9 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
     android:background="@drawable/bg_compiled"
     android:id="@+id/gameScreen"
     tools:context="com.stephenfacentedev.com.monkeydefense.LevelPlay">
@@ -128,7 +125,8 @@
             android:text="0"
             android:textColor="#ffffffff"
             android:textAppearance="@style/StrokeText"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:paddingRight="5dp" />
     </LinearLayout>
 
     <TextView
