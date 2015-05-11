@@ -56,7 +56,7 @@ public class LevelSelection extends ActionBarActivity
 
 
         ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Highscores");
-        query.setLimit(50);
+        query.setLimit(10);
         query.addDescendingOrder("score");
         query.addAscendingOrder("createdAt");
         query.findInBackground(new FindCallback<ParseObject>() {

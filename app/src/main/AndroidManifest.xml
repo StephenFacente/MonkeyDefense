@@ -31,7 +31,6 @@
         </activity>
         <activity
             android:name=".LevelSelection"
-            android:screenOrientation="portrait"
             android:label="Monkey Defense">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -29,7 +29,7 @@
         android:layout_below="@id/playButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="High Scores"
+        android:text="Top 10 "
         android:id="@+id/highscores"
         android:textAppearance="@style/StrokeText" />
 
